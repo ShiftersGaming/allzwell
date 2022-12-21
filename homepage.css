@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #e8e9e8;
+}
+.placeholder {
+  height: 90vh;
+}
+.container {
+  height: 25vh;
+  background-color: #1b5c74;
+  border-bottom-left-radius: 25px;
+  padding-right: 2vh;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 9px 0px #999;
+}
+.title {
+  font-family: "Quicksand", sans-serif;
+  color: white;
+  font-size: 3rem;
+  text-align: right;
+}
+.subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  text-align: right;
+  color: white;
+}
+#greeting {
+  margin-top: 5vh;
+}
+#image {
+  margin-right: 2vw;
+  border-radius: 15px;
+  height: 12vh;
+  width: 20vw;
+  background-color: #f09819;
+  margin-top: 2.5vh;
+  box-shadow: 5px 5px 9px 0px #999;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+#text {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: white;
+  height: 12vh;
+  margin-top: 2.5vh;
+  width: 60vw;
+  border-radius: 15px;
+  box-shadow: 5px 5px 9px 0px #999;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+#img {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+
+}
+img {
+  position: absolute;
+  text-align: center;
+  justify-items: center;
+}
+.optioncontainer {
+  display: flex;
+  justify-content: center;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.backbutton {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4rem;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  z-index: 2;
+}

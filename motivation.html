@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+      .title {
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  font-size: 4rem;
+  text-align: center;
+}
+.subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+      body {
+        text-align: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f3c89d;
+      }
+  .btn {
+  color: white;
+  border: transparent;
+  align-items: center;
+  text-align: center;;
+  background-color: #e86830;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  padding: 6px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #e86830;
+}
+.backbutton {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 4rem;
+  background-color: transparent;
+  border: transparent;
+  color: black;
+  margin-top: 2vh;
+  margin-left: 2vw;
+}
+    </style>
+</head>
+<body>
+  <button class="backbutton" onclick="goBack()"><i class="fa-solid fa-circle-left"></i></button>
+    <div id="music">
+        <div id="journal">
+          <p id="quote" class="title">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+            magni.
+          </p>
+          <h3 id="author" class="subtitle">Lorem, ipsum.</h3>
+          <button id="btn" class="btn" style="color: white;">Change Quote</button>
+        </div>
+      </div>
+    <script>
+
+let quote = document.getElementById("quote");
+let author = document.getElementById("author");
+let btn = document.getElementById("btn");
+
+
+
+const url = "https://api.quotable.io/random";
+
+let getQuote = () => {
+  fetch(url)
+    .then((data) => data.json())
+    .then((item) => {
+      quote.innerText = item.content;
+      author.innerText = item.author;
+    });
+};
+cinterval = setInterval('getQuote()', 5000)
+window.addEventListener("load", getQuote);
+btn.addEventListener("click", getQuote);
+function goBack(){
+  window.history.back()
+}
+    </script>
+</body>
+</html>

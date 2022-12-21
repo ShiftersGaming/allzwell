@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+*{
+    margin: 0;
+    padding: 0  ;
+}
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+.container {
+    height: 100vh;
+    width: 100vw;
+}
+.notes {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.notes * {
+    font-family: sans-serif;
+}
+
+.notes__sidebar {
+    
+}
+
+.notes__add {
+    background: #009688;
+    border: none;
+    border-radius: 7px;
+    color: #ffffff;
+    cursor: pointer;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 1em;
+    padding: 0.75em 0;
+    width: 100%;
+    font-family: "Quicksand", sans-serif;
+}
+
+.notes__list-item {
+    cursor: pointer;
+}
+
+.notes__list-item--selected {
+    background: #eeeeee;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+.notes__small-title,
+.notes__small-updated {
+    padding: 10px;
+font-family: "Quicksand", sans-serif;
+}
+
+.notes__small-title {
+    font-size: 1.2em;
+    font-family: "Quicksand", sans-serif;
+}
+
+.notes__small-body {
+    padding: 0 10px;
+    font-family: "Quicksand", sans-serif;
+}
+
+.notes__small-updated {
+    color: #aaaaaa;
+    font-style: italic;
+    text-align: right;
+    font-family: "Quicksand", sans-serif;
+}
+
+.notes__preview {
+    display: flex;
+    flex-direction: column;
+    padding: 2em 3em;
+    flex-grow: 1;
+    font-family: "Quicksand", sans-serif;
+}
+
+.notes__title,
+.notes__body {
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.notes__title {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: "Bebas Neue", cursive;
+}
+
+.notes__body {
+    flex-grow: 1;
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-top: 2em;
+    resize: none;
+    font-family: "Quicksand", sans-serif;
+}
+.backbutton {
+    font-size: 4rem;
+    background-color: transparent;
+    border: transparent;
+    color: black;
+  }

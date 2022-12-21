@@ -1,0 +1,206 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #F4C89C;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.title {
+  font-family: "Bebas Neue", cursive;
+  color: black;
+  font-size: 6rem;
+  text-align: center;
+}
+.subtitle {
+  font-family: "Quicksand", sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+}
+.btn {
+  border: transparent;
+  background-color: transparent;
+}
+.buttoncontainer a {
+  text-align: center;
+  color: white;
+  font-size: 1rem;
+  text-decoration: none;
+}
+#music {
+  background-color: #1663C7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#journal {
+  color: white;
+  background-color: green;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@media screen and (max-width: 672px) {
+    .title{
+      font-size: 4rem;
+    }
+    .subtitle {
+      font-size: 1rem;
+    }
+    #navbar ul li{
+      font-size: 1rem;
+    }
+    #navbar {
+      justify-content: center;
+    }
+}
+@media screen and (max-width: 1422px) {
+  .imagecontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #whyus {
+    font-size: 0.9rem;
+  }
+  img {
+    margin: 1vh;
+  }
+}
+
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  display: flex;
+  margin: 5vh;
+}
+p {
+    font-family: "Quicksand", sans-serif;
+    color: white; 
+    font-size: 1.5rem;
+    text-align: center;
+}
+.buttoncontainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 3vh;
+  width: vw;
+  background-color: #e86830;
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  font-family: "Quicksand", sans-serif;
+  font-size: 1rem;
+  padding: 6px 20px;
+  margin: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: #e86830;
+}
+nav {
+  background: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav .mainMenu {
+  display: flex;
+  list-style: none;
+}
+nav .mainMenu li a {
+  display: inline-block;
+  padding: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: 0.2s ease;
+}
+nav .mainMenu li a:hover {
+  background: rgb(255, 94, 0);
+}
+nav .openMenu {
+  font-size: 2rem;
+  margin: 20px;
+  display: none;
+  cursor: pointer;
+}
+nav .mainMenu .closeMenu,
+.icons i {
+  font-size: 2rem;
+  display: none;
+  cursor: pointer;
+}
+.fa-facebook:hover {
+  color: rgb(0, 110, 255);
+}
+.fa-twitter:hover {
+  color: rgb(86, 154, 243);
+}
+.fa-instagram:hover {
+  color: rgb(255, 0, 191);
+}
+.fa-github:hover {
+  color: rgb(255, 123, 0);
+}
+nav .logo {
+  margin: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+@media (max-width: 800px) {
+  nav .mainMenu {
+    height: 100vh;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    left: 0px;
+    z-index: 10;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgb(0, 0, 0);
+    transition: top 1s ease 0s;
+    display: none;
+  }
+  nav .mainMenu .closeMenu {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  nav .openMenu {
+    display: block;
+  }
+  nav .mainMenu li a:hover {
+    background: none;
+    color: rgb(255, 123, 0);
+  }
+  .icons i {
+    display: inline-block;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-size: cover; 
+    background-image: url(background.png);
+}
+.container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+.radiobutton {
+    margin: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.question {
+    font-family: "Bebas Neue", cursive;
+    color: white;
+}
