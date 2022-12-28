@@ -1,30 +1,65 @@
-<html>
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
   <head>
-    <title>Form | All’zwell</title>
+    <meta charset="UTF-8">
+    <!---<title> Responsive Registration Form | CodingLab </title>--->
     <link rel="stylesheet" href="form.css">
-</head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
 <body>
-    <div class="container">
-    <form name="form" id="form">
-    <h1 class="question">How are you feeling today?</h1>
-    label.radiobutton</label><input type="radio" name="feeling" value="excellent"class="radiobutton" checked>Excellent
-    <input type="radio" name="feeling" value="great" class="radiobutton">Great
-    <input type="radio" name="feeling" value="fine" class="radiobutton">Fine
-    <input type="radio" name="feeling" value="worried" class="radiobutton">Worried
-    <h1 class="question">Did You Eat Well</h1>
-    <input type="radio" name="eatquality" value="Yes"class="radiobutton" checked>Yes
-    <input type="radio" name="eatquality" value="No" class="radiobutton" >No
-    <h1 class="question">Did You Sleep Well</h1>
-    <input type="radio" name="sleepquality" value="Yes" class="radiobutton" checked>Yes</input>
-    <input type="radio" name="sleepquality" value="No" class="radiobutton">No</input>
-    <h1 class="question">Are You on any Medication</h1>
-    <input type="radio" name="Medication" value="Yes" class="radiobutton" checked>Yes</input>
-    <input type="radio" name="Medication" value="No" class="radiobutton">No</input>
-    <h1 class="question">Are You Alone?</h1>  
-    <input type="radio" name="alone" value="Yes" class="radiobutton" checked>Yes</input>
-    <input type="radio" name="alone" value="No" class="radiobutton">No</input>
-    <h1 class="question">Let Us Know How You're feeling</h1>
-    <input type="text" name="Type your answer here" class="radiobutton"></input>
+  <div class="container">
+    <div class="title">Wellness Form</div>
+    <div class="content">
+      <form method="post" action="https://script.google.com/macros/s/AKfycbzMWgpdpQjcrnVoiapkYGKVG_9_dUQzO5t3CFY0lhXWhVmpyF7i3IrSls40xCPCt62h/exec" id="contactform">
+        <div class="user-details">
+          <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter your name" name="name" required>
+          </div>
+          <div class="input-box">
+          <div class="input-box">
+            <span class="details">How Are You Feeling?</span>
+            <input type="text" placeholder="Your feelings" name="feelings" required class="feelings">
+            
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="symptoms" id="dot-1">
+            <input type="radio" name="symptoms" id="dot-2">
+            <input type="radio" name="symptoms" id="dot-3">
+            <span class="gender-title">Symptoms</span>
+            <div class="category">
+              <label for="dot-1" name="symptoms">
+              <span class="dot one"></span>
+              <span class="gender" name="symptoms">ADHD</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two" ></span>
+              <span class="gender">Stress</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three" ></span>
+              <span class="gender">Anxiety</span>
+              </label>
+            </div>
+          </div>  
+        <div class="button">
+          <input type="submit" value="Submit" id="sumbit" name="submit">
+        </div>
+      </form> 
     </div>
+  </div>
+  <script>
+    const scriptURL = ''
+    const form = document.forms['contactform']
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => {  location.replace("/homepage.html"); })
+      .catch(error => console.error('Error!', error.message))
+    })
+    </script>
 </body>
 </html>

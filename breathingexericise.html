@@ -2,17 +2,36 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>All'zWell | Breathing Exercises</title>
 <link rel="stylesheet" href="timer.css">
+<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.24/webcam.js"></script>
 </head>
 <body>
-<script src="timer.js"></script>
+<nav>
+  <input id="nav-toggle" type="checkbox">
+  <div class="logo"><img src="ALLz_Well.png" alt="" width="20%"></div>
+  <ul class="links">
+    <li><a href="homepage.html">Home</a></li>
+    <li><a href="breathingexericise.html">Breathing</a></li>
+    <li><a href="motivation.html">Motivation</a></li>
+    <li><a href="music (1).html">Music</a></li>
+    <li><a href="contactus.html">Contact</a></li>
+  </ul>
+  <label for="nav-toggle" class="icon-burger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </label>
+</nav>
 
 <div id="container">
-  <div id="buttoncontainer">
-  <button class="backbutton" onclick="goBack()"><i class="fa-solid fa-circle-left"></i></button>
-  </div>
+  <video id="videoElement" controls muted autoplay="true" height="200px"></video>
   <div class="circlecontainer"><div class="circle"></div>
   <span id="countdown">4</span>
   <span id="breathe"></span>
@@ -24,6 +43,7 @@
 </div>  
   
 </div>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
+<script src="timer.js"></script>
 </body>
 </html>

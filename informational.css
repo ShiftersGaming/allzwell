@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+html{
+    scroll-behavior: smooth;
+}
+body 
+{
+    background-color: #F4C89C;
+}
+#home {
+    color: white;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+.title {
+    font-family: "Bebas Neue";
+    color: black;
+    font-size: 2.5rem;
+    text-align: center;
+    width: 80vw;
+  }
+.subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    color: black;
+    width: 80vw;
+    height: 30vh;
+  }
+#SCD{
+    background-color: #1663C7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+#DMDD{
+    background-color: #191970;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ASD{
+    background-color: rgb(6, 66, 22);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#PTSD{
+    background-color: #c4158a;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-items: center;
+    height: 100vh;
+}
+#Bullying{
+    background-color:aqua;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+}
+#Cyber-Bullying{
+    background-color:rgb(150, 248, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    height: 100vh;
+}
+.btn {
+    border: transparent;
+    background-color: transparent;
+}
+.buttoncontainer a {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vh;
+    width: vw;
+    background-color: #e86830;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-size: 2rem;
+    padding: 6px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #e86830;
+  }

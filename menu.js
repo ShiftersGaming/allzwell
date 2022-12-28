@@ -22,3 +22,5 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
+
+window.onscroll = function() {myFunction()};

@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #F4C89C;
+}
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+#depression{
+    background-color: #93DD0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#anxiety{
+    background-color: #34DD0A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#stress{
+    background-color: #0ADDD3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#SCD{
+    background-color: #1663C7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#DMDD{
+    color: white;
+    background-color: green;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ASD{
+    color: white;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ADHD{
+    color: white;
+    background-color: #0A73DD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#PTSD{
+    color: white;
+    background-color: purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Bullying{
+    color: white;
+    background-color: cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 1rem;
+}
+#Cyber-Bullying{
+    color: white;
+    background-color: rgb(235, 198, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Substance-Addiction{
+    color: white;
+    background-color:#9ACDE0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#Gaming-Addiction{
+    color: white;
+    background-color: #191970;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ConductDisorder{
+    color: white;
+    background-color:  #10CBBD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ODD{
+    color: white;
+    background-color: #0ADD8D;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.btn {
+    border: transparent;
+    background-color: transparent;
+}
+.buttoncontainer a {
+    text-align: center;
+    color: white;
+    font-size: 1rem;
+    text-decoration: none;
+}
+.buttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 3vh;
+    width: vw;
+    background-color: #e86830;
+    text-align: center;
+    background-color: transparent;
+    color: black;
+    font-family: "Quicksand", sans-serif;
+    font-size: 1rem;
+    padding: 6px 20px;
+    margin: 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #e86830;
+}
+.title {
+    font-family: "Bebas Neue", cursive;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+}
+.subtitle {
+    font-family: "Quicksand", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    color: black;
+}
+.text{
+    font-size: 1.2rem;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}

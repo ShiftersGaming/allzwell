@@ -4,11 +4,18 @@ var continuation = 1;
 var finishedloop = false;
 var breathe = "Slowly Breathe In";
 const backbutton = document.querySelectorAll('.backbutton');
+var video = document.querySelector("#videoElement");
 
-function goBack(){
-  window.history.back()
+if (navigator.mediaDevices.getUserMedia) {
+  navigator.mediaDevices.getUserMedia({ video: true })
+    .then(function (stream) {
+      video.srcObject = stream;
+    })
+    .catch(function (err0r) {
+      console.log("Something went wrong!" + err0r);
+    });
 }
- 
+
 function countdown_timer(){
   document.getElementById('breathe').innerHTML = breathe;
   max_time--;
