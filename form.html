@@ -57,7 +57,7 @@
       e.preventDefault()
       fetch(scriptURL, { method: 'POST', body: new FormData(form)})
       .then(response => alert("Thank you! your form is submitted successfully." ))
-      .then(() => {  location.replace("allzwell/homepage"); })
+      .then(() => {  location.replace("homepage.html"); })
       .catch(error => console.error('Error!', error.message))
     })
     </script>
