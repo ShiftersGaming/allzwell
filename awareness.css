@@ -188,3 +188,16 @@ body {
     align-items: center;
     text-align: center;
 }
+table {
+text-align:center;
+font-family: "Quicksand", sans-serif;
+height: 20vh;
+width: 50%;
+margin-top: 2vh;
+border: 2px solid white
+border: collapse;
+}
+td {
+border: 2px solid white}
+tr {
+border: 2px solid white}
