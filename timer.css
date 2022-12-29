@@ -62,7 +62,7 @@ nav {
     padding: 0 5%;
     height: 100px;
     background-color: transparent;
-    color: black;
+    color: white;
   }
 nav .logo {
     float: left;
@@ -71,7 +71,7 @@ nav .logo {
     display: flex;
     align-items: center;
     font-size: 24px;
-    color: black;
+    color: wheat;
   }
   nav .links {
     float: right;
@@ -89,7 +89,7 @@ nav .logo {
     display: block;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color:white;
     text-decoration: none;
   }
   #nav-toggle {
@@ -106,7 +106,7 @@ nav .logo {
   nav .icon-burger .line {
     width: 30px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -162,4 +162,8 @@ nav .logo {
     color: #000;
     text-decoration: none;
     font-size: 12px;
+  }
+  #videoElement {
+    width: 20vw;
+    height: 10vh;
   }
