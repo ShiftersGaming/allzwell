@@ -230,6 +230,10 @@ nav .icon-burger .line {
 	text-decoration: none;
 	font-size: 12px;
 }
+video {
+  height: 40vh;
+  width: 40vw;
+}
 /*#awareness {
 	color: white;
 	background-color: #EED7DB;

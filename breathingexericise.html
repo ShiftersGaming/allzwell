@@ -13,37 +13,45 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.24/webcam.js"></script>
 </head>
 <body>
-<nav>
-  <input id="nav-toggle" type="checkbox">
-  <div class="logo"><img src="ALLz_Well.png" alt="" width="20%"></div>
-  <ul class="links">
-    <li><a href="homepage.html">Home</a></li>
-    <li><a href="breathingexericise.html">Breathing</a></li>
-    <li><a href="motivation.html">Motivation</a></li>
-    <li><a href="music (1).html">Music</a></li>
-    <li><a href="contactus.html">Contact</a></li>
-  </ul>
-  <label for="nav-toggle" class="icon-burger">
-    <div class="line"></div>
-    <div class="line"></div>
-    <div class="line"></div>
-  </label>
-</nav>
+  <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+  <html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>All'zWell | Breathing Exercises</title>
+  <link rel="stylesheet" href="timer.css">
+  </head>
+  <body>
 
-<div id="container">
-  <video id="videoElement" controls muted autoplay="true" height="200px"></video>
-  <div class="circlecontainer"><div class="circle"></div>
-  <span id="countdown">4</span>
-  <span id="breathe"></span>
+  <nav>
+    <input id="nav-toggle" type="checkbox">
+    <div class="logo"><img src="ALLz_Well.png" alt="" width="20%"></div>
+    <ul class="links">
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="breathingexericise.html">Breathing</a></li>
+      <li><a href="motivation.html">Motivation</a></li>
+      <li><a href="music (1).html">Music</a></li>
+      <li><a href="contactus.html">Contact</a></li>
+      <li><a href="affirmations.html">Affirmations</a></li>
+    </ul>
+    <label for="nav-toggle" class="icon-burger">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </label>
+  </nav>
+  <div id="container">
+    <video id="videoElement" autoplay="true"></video>
+    <div class="circlecontainer"><div class="circle"></div>
+    <span id="countdown">4</span>
+    <span id="breathe"></span>
+    </div>
+    
+  <div id="buttons">
+    <button type="button" id="btn" onclick="start()">Resume</button>
+    <button type="button" id="btn" onclick="stop()">Pause</button>
+  </div>  
+    
   </div>
-  
-<div id="buttons">
-  <button type="button" id="btn" onclick="start()">Resume</button>
-  <button type="button" id="btn" onclick="stop()">Pause</button>
-</div>  
-  
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.min.js"></script>
-<script src="timer.js"></script>
-</body>
-</html>
+  <script src="timer.js"></script>
+  </body>
+  </html>

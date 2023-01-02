@@ -31,7 +31,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 4rem;
+  font-size: 3rem;
 }
 #btn {
   border: 2px solid rgb(25, 80, 25);
@@ -39,7 +39,7 @@
   background-color: transparent;
   color: white;
   font-family: "Quicksand", sans-serif;
-  font-size: 3rem;
+  font-size: 1rem;
   padding: 6px 20px;
   border-radius: 20px;
   cursor: pointer;
@@ -52,7 +52,88 @@
   background-color: rgb(25, 80, 25);
     border: transparent;
   }
-nav {
+  nav {
+    background: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  nav .mainMenu {
+    display: flex;
+    list-style: none;
+  }
+  nav .mainMenu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: 0.2s ease;
+  }
+  nav .mainMenu li a:hover {
+    background: green;
+  }
+  nav .openMenu {
+    font-size: 2rem;
+    margin: 20px;
+    display: none;
+    cursor: pointer;
+  }
+  nav .mainMenu .closeMenu,
+  .icons i {
+    font-size: 2rem;
+    display: none;
+    cursor: pointer;
+  }
+  .fa-facebook:hover {
+    color: rgb(0, 110, 255);
+  }
+  .fa-twitter:hover {
+    color: rgb(86, 154, 243);
+  }
+  .fa-instagram:hover {
+    color: rgb(255, 0, 191);
+  }
+  .fa-github:hover {
+    color: green;
+  }
+  nav .logo {
+    margin: 6px;
+    cursor: pointer;
+    text-transform: uppercase;
+  }
+  @media (max-width: 800px) {
+    nav .mainMenu {
+      height: 100vh;
+      position: fixed;
+      top: 0px;
+      right: 0px;
+      left: 0px;
+      z-index: 10;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: rgb(0, 0, 0);
+      transition: top 1s ease 0s;
+      display: none;
+    }
+    nav .mainMenu .closeMenu {
+      display: block;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+    }
+    nav .openMenu {
+      display: block;
+    }
+    .icons i {
+      display: inline-block;
+      padding: 12px;
+    }
+  }
+  nav {
     position: fixed;
     z-index: 10;
     left: 0;
@@ -64,7 +145,7 @@ nav {
     background-color: transparent;
     color: black;
   }
-nav .logo {
+  nav .logo {
     float: left;
     width: 40%;
     height: 100%;
@@ -84,12 +165,12 @@ nav .logo {
   }
   nav .links li {
     list-style: none;
-  }
+  }  
   nav .links a {
     display: block;
     font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: white;
     text-decoration: none;
   }
   #nav-toggle {
@@ -106,7 +187,7 @@ nav .logo {
   nav .icon-burger .line {
     width: 30px;
     height: 5px;
-    background-color: black;
+    background-color: white;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -127,7 +208,7 @@ nav .logo {
       height: auto;
       flex-direction: column;
       justify-content: space-evenly;
-      background-color: #e86830;
+      background-color: green;
       overflow: hidden;
       box-sizing: border-box;
       transition: all .5s ease-in-out;
