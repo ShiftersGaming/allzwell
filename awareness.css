@@ -201,3 +201,16 @@ td {
 border: 2px solid white}
 tr {
 border: 2px solid white}
+
+@media screen and (max-width: 1082px){
+    .subtitle {
+        font-size: 1rem;
+    }
+    .title {
+        font-size: 2rem;
+    }
+    #table {
+        font-size: 0.8rem;
+        width: 100vw;
+    }
+}

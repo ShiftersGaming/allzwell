@@ -11,10 +11,12 @@ h1{
     font-size: 21px;
     justify-content: center;
     align-items: center;
+	text-align: center;
 }
 h3
 {
     font-size: 19px;
+	text-align: center;	
 }
 iframe{
     background-color: transparent;
@@ -132,5 +134,10 @@ nav .icon-burger .line {
 	font-size: 12px;
 }
 .container {
-    margin: 20vh;
+	margin-top: 15vh;
+	width: 100%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
 }

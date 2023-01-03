@@ -2,14 +2,14 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    display: inline;
+    display: flex;
     align-items: center;
     justify-content: center;
     background: #957DAD;
 }
 .title{
     font-family: "Quicksand", sans-serif;
-    color: white;
+    color: black;
     font-size: 3rem;
     text-align: center;
     margin-top: 15vh;
@@ -89,7 +89,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: green;
+		background-color: #957DAD;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
@@ -97,7 +97,7 @@ nav .icon-burger .line {
 	}
 	nav .links a {
 		font-size: 20px;
-		color: white;
+		color: black;
 	}
 	nav :checked ~ .links {
 		bottom: 0;
@@ -116,4 +116,26 @@ nav .icon-burger .line {
 	}
 	
 }
-
+.container{
+	display: flex;
+	width: 70vw;
+	height: fit-content;
+	flex-direction: column;
+}
+.video{
+	height: 60vh;
+	margin-top: 10vh;
+	width: 60vw;
+	justify-content: center;
+	align-items: center;
+	margin-left: 5vh;
+}
+@media screen and (max-width=740px){
+	.video	{
+		width: fit-content;
+		height: 40vh;
+	}
+	.container{
+		width: fit-content;
+	}
+}
