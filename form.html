@@ -11,17 +11,55 @@
   <div class="container">
     <div class="title">Wellness Form</div>
     <div class="content">
-      
-            <span class="details">Take our feedback form</span>
-  
+      <form method="post" action="https://script.google.com/macros/s/AKfycbzMWgpdpQjcrnVoiapkYGKVG_9_dUQzO5t3CFY0lhXWhVmpyF7i3IrSls40xCPCt62h/exec" id="contactform">
+        <div class="user-details">
+          <div class="input-box">
+          <span class="details">Full Name</span>
+          <input type="text" placeholder="Enter your name" name="name" required>
+          </div>
+          <div class="input-box">
+          <div class="input-box">
+            <span class="details">How Are You Feeling?</span>
+            <input type="text" placeholder="Your feelings" name="feelings" required class="feelings">
+            
+          </div>
+          <div class="gender-details">
+            <input type="radio" name="symptoms" id="dot-1">
+            <input type="radio" name="symptoms" id="dot-2">
+            <input type="radio" name="symptoms" id="dot-3">
+            <span class="gender-title">Symptoms</span>
+            <div class="category">
+              <label for="dot-1" name="symptoms">
+              <span class="dot one"></span>
+              <span class="gender" name="symptoms">ADHD</span>
+            </label>
+            <label for="dot-2">
+              <span class="dot two" ></span>
+              <span class="gender">Stress</span>
+            </label>
+            <label for="dot-3">
+              <span class="dot three" ></span>
+              <span class="gender">Anxiety</span>
+              </label>
+            </div>
+          </div>  
         <div class="button">
-          <a href="https://docs.google.com/forms/d/1RT4Ke0um66bMdepPTO6F7K-9DY4QgdmHk-rpOF71PWM/edit"><input type="submit" value="Take the feedback form" name="submit"></a>
-          <a href="homepage.html"><input type="submit" value="Go to home instead" name="submit"></a>
+          <input type="submit" value="Submit" id="sumbit" name="submit">
         </div>
       </form> 
     </div>
   </div>
   <script>
+    const scriptURL = ''
+    const form = document.forms['contactform']
+    
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => alert("Thank you! your form is submitted successfully." ))
+      .then(() => {  location.replace("homepage.html"); })
+      .catch(error => console.error('Error!', error.message))
+    })
     </script>
 </body>
 </html>
