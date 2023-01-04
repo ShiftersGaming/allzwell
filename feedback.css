@@ -1,25 +1,15 @@
-@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
-*{
-    margin: 0;
-    padding: 0;
-}
-html,
 body {
-    background-color: #f3c89d;
+    background-color: #F4C89C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
-.container {
-  margin-top: 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 75vh;
-}
-.subtitle {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
-  width: 70vw;
+iframe{
+    width: 640px;
+    height: 2400px;
+    display:flex;
 }
 nav {
 	position: fixed;
@@ -96,15 +86,15 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: #f3c89d;
+		background-color: #e86830;;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
-		color: black;
+		color: white;
 	}
 	nav .links a {
 		font-size: 20px;
-		color: black;
+		color: white;
 	}
 	nav :checked ~ .links {
 		bottom: 0;
@@ -123,19 +113,40 @@ nav .icon-burger .line {
 	}
 	
 }
-
-.youtube-link {
-	position: fixed;
-	left: 20px;
-	bottom: 20px;
-	color: #000;
+.title {
+    font-family: "Quicksand", sans-serif;
+    color: black;
+    font-size: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 25vh;
+    font-weight: 550;
+}
+.btn
+{
+    width: 40%;
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    background-color: #009688;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    transition: .3s;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.btn:hover{
+    background-color: #27ae60;
+}
+ .btn a {
+	display: block;
+	font-size: 16px;
+	font-weight: bold;
+	color: White;
 	text-decoration: none;
-	font-size: 12px;
-}
-video {
-  height: 40vh;
-  width: 40vw;
-}
-.background{
-  animation: dynamicBG 10s infinite ;
+    list-style: none;
 }
