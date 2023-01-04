@@ -237,12 +237,6 @@ video {
 .background{
   animation: dynamicBG 10s infinite ;
 }
-@keyframes identifier .background{
-  0% {background-color: green;}
-  10% {background-color: yellow;}
-  20% {background-color: cyan;}
-  
-}
 /*#awareness {
 	color: white;
 	background-color: #EED7DB;

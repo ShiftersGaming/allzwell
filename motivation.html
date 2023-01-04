@@ -4,10 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="//code.tidio.co/9e6ecbutqiajsqlvccx41vodzvipy3om.js" async></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <title>Document</title>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
+      html{
+        scroll-behavior: smooth;
+      }
+
       .title {
   font-family: "Garamond", cursive;
   color: black;
@@ -169,10 +174,11 @@ nav .icon-burger .line {
       <li><a href="breathingexericise.html">Breathing</a></li>
       <li><a href="motivation.html">Motivation</a></li>
       <li><a href="music (1).html">Music</a></li>
-      <li><a href="contactus.html">Contact</a></li>
-      <li><a href="affirmations.html">Affirmations</a></li>
+      <li><a href="journal.html">Journal</a></li>
       <li><a href="awareness.htm">Awareness</a></li>
-      <li><a href="game.html">Mindfullness</a></li>
+      <li><a href="game.html">Mindfulness</a></li>
+      <li><a href="contactus.html">Contact Us!</a></li>
+      <li><a href="login.html">Logout</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
       <div class="line"></div>
@@ -180,6 +186,7 @@ nav .icon-burger .line {
       <div class="line"></div>
     </label>
   </nav>
+  <section id="motivational">
     <div id="music">
         <div id="journal">
           <p id="quote" class="title">
@@ -190,6 +197,7 @@ nav .icon-burger .line {
           <button id="btn" class="btn" style="color: white;">Change Quote</button>
         </div>
       </div>
+</section>        
     <script>
 
 let quote = document.getElementById("quote");

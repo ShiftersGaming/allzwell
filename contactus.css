@@ -111,7 +111,7 @@ h2::after
 .subtitle{
     font-size: 1.5rem;
     color: black;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     align-items: center;
 }
