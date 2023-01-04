@@ -2,7 +2,7 @@ var max_time = 4;
 var cinterval;
 var continuation = 1;
 var finishedloop = false;
-var breathe = "Slowly Breathe In";
+var breathe = "Inhale Slowly";
 const backbutton = document.querySelectorAll('.backbutton');
 var video = document.querySelector("#videoElement");
 
@@ -28,7 +28,7 @@ function countdown_timer(){
   if(max_time == 1 && continuation == 2){
     max_time = 9;
     continuation = 3;
-    breathe = "Slowly Exhale"
+    breathe = "Exhale Slowly"
     finishedloop = true;
   }
   if(max_time == 1 && finishedloop == true){
