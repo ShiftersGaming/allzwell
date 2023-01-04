@@ -208,7 +208,6 @@ let getQuote = () => {
       author.innerText = item.author;
     });
 };
-cinterval = setInterval('getQuote()', 5000)
 window.addEventListener("load", getQuote);
 btn.addEventListener("click", getQuote);
 function goBack(){
