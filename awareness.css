@@ -186,9 +186,8 @@ body {
 .subtitle {
     font-family: "Quicksand", sans-serif;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
     color: black;
-    width: 80vw;
 }
 .text{
     font-size: 1.2rem;
@@ -233,7 +232,7 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
-	background-color: #F4C89C;
+	background-color: transparent;
   color: black;
 }
 nav .logo {

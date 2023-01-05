@@ -70,7 +70,7 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
-	background-color: #f3c89d;
+	background-color: transparent;
   color: black;
 }
 nav .logo {
@@ -161,6 +161,7 @@ nav .icon-burger .line {
 	nav :checked ~ .icon-burger .line:nth-child(2) {
 		opacity: 0;
 	}
+	
 }
     </style>
 </head>
@@ -173,11 +174,10 @@ nav .icon-burger .line {
       <li><a href="breathingexericise.html">Breathing</a></li>
       <li><a href="motivation.html">Motivation</a></li>
       <li><a href="music (1).html">Music</a></li>
+      <li><a href="journal.html">Journal</a></li>
       <li><a href="awareness.htm">Awareness</a></li>
-      <li><a href="game.html">Mindfullness</a></li>
-      <li><a href="affirmations.html">Affirmations</a></li>
+      <li><a href="game.html">Mindfulness</a></li>
       <li><a href="contactus.html">Contact Us!</a></li>
-      <li><a href="https://docs.google.com/forms/d/1RT4Ke0um66bMdepPTO6F7K-9DY4QgdmHk-rpOF71PWM/edit">Feedback Form</a></li>
       <li><a href="login.html">Logout</a></li>
     </ul>
     <label for="nav-toggle" class="icon-burger">
@@ -190,13 +190,14 @@ nav .icon-burger .line {
     <div id="music">
         <div id="journal">
           <p id="quote" class="title">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas,
+            magni.
           </p>
-          <h3 id="author" class="subtitle"></h3>
+          <h3 id="author" class="subtitle">Lorem, ipsum.</h3>
+          <button id="btn" class="btn" style="color: white;">Change Quote</button>
         </div>
       </div>
-      <button id="btn" class="btn" style="color: white;">Change Quote</button>
-</section>
-   
+</section>        
     <script>
 
 let quote = document.getElementById("quote");

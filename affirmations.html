@@ -4,229 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="//code.tidio.co/9e6ecbutqiajsqlvccx41vodzvipy3om.js" async></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="affirmations.css">
     <title>Document</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Quicksand&display=swap");
-      html{
-        scroll-behavior: smooth;
-      }
-
-      .title {
-  font-family: "Garamond", cursive;
-  color: black;
-  font-size: 4rem;
-  text-align: center;
-}
-.subtitle {
-  font-family: "Quicksand", sans-serif;
-  font-size: 1.5rem;
-  text-align: center;
-  color: black;
-}
-      body {
-        text-align: center;
-        height: 100vh;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: #f3c89d;
-      }
-  .btn {
-  color: white;
-  border: transparent;
-  align-items: center;
-  text-align: center;;
-  background-color: #e86830;
-  text-align: center;
-  background-color: transparent;
-  color: black;
-  font-family: "Quicksand", sans-serif;
-  font-size: 1rem;
-  padding: 6px 20px;
-  margin: 20px;
-  border-radius: 20px;
-  cursor: pointer;
-  background-color: #e86830;
-}
-.backbutton {
-  position: absolute;
-  left: 0;
-  top: 0;
-  font-size: 4rem;
-  background-color: transparent;
-  border: transparent;
-  color: black;
-  margin-top: 2vh;
-  margin-left: 2vw;
-}
-.subtitle {
-  font-size: xx-large;
-}
-nav {
-	position: fixed;
-	z-index: 10;
-	left: 0;
-	right: 0;
-	top: 0;
-	font-family: 'Montserrat', sans-serif;
-	padding: 0 5%;
-	height: 100px;
-	background-color: transparent;
-  color: black;
-}
-nav .logo {
-	float: left;
-	width: 40%;
-	height: 100%;
-	display: flex;
-	align-items: center;
-	font-size: 24px;
-	color: black;
-}
-nav .links {
-	float: right;
-	padding: 0;
-	width: 60%;
-	height: 100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-nav .links li {
-	list-style: none;
-}
-nav .links a {
-	display: block;
-	font-size: 16px;
-	font-weight: bold;
-	color: black;
-	text-decoration: none;
-}
-#nav-toggle {
-	position: absolute;
-	top: -100px;
-}
-nav .icon-burger {
-	display: none;
-	position: absolute;
-	right: 5%;
-	top: 50%;
-	transform: translateY(-50%);
-}
-nav .icon-burger .line {
-	width: 30px;
-	height: 5px;
-	background-color: black;
-	margin: 5px;
-	border-radius: 3px;
-	transition: all .3s ease-in-out;
-}
-@media screen and (max-width: 768px) {
-  nav .logo {
-	transform: translate(0px,98987px);
-	}
-	nav .links {
-		float: none;
-		position: fixed;
-		z-index: 9;
-		left: 0;
-		right: 0;
-		top: 100px;
-		bottom: 100%;
-		width: auto;
-		height: auto;
-		flex-direction: column;
-		justify-content: space-evenly;
-		background-color: #e86830;;
-		overflow: hidden;
-		box-sizing: border-box;
-		transition: all .5s ease-in-out;
-		color: white;
-	}
-	nav .links a {
-		font-size: 20px;
-		color: white;
-	}
-	nav :checked ~ .links {
-		bottom: 0;
-	}
-	nav .icon-burger {
-		display: block;
-	}
-	nav :checked ~ .icon-burger .line:nth-child(1) {
-		transform: translateY(10px) rotate(225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(3) {
-		transform: translateY(-10px) rotate(-225deg);
-	}
-	nav :checked ~ .icon-burger .line:nth-child(2) {
-		opacity: 0;
-	}
-	
-}
-    </style>
 </head>
 <body>
-  <nav>
-    <input id="nav-toggle" type="checkbox">
-    <div class="logo"><img src="ALLz_Well.png" alt="" width="20%"></div>
-    <ul class="links">
-      <li><a href="homepage.html">Home</a></li>
-      <li><a href="breathingexericise.html">Breathing</a></li>
-      <li><a href="music (1).html">Music</a></li>
-      <li><a href="journal.html">Journal</a></li>
-      <li><a href="awareness.htm">Awareness</a></li>
-      <li><a href="game.html">Mindfullness</a></li>
-      <li><a href="contactus.html">Contact Us!</a></li>
-      <li><a href="login.html">Logout</a></li>
-    </ul>
-    <label for="nav-toggle" class="icon-burger">
-      <div class="line"></div>
-      <div class="line"></div>
-      <div class="line"></div>
-    </label>
-  </nav>
-  <section id="motivational">
-    <div id="music">
-        <div id="journal">
-          <h3 id="author" class="title" style="font-size: 1.5rem;"></h3>
-          <p id="quote" class="title"></p>
-          <button id="btn" class="btn" style="color: white;">Change Quote</button>
-        </div>
-      </div>
-</section>        
-    <script>
-
-let quote = document.getElementById("quote");
-let author = document.getElementById("author");
-let btn = document.getElementById("btn");
-
-let i = 0;
-const newArr = ["1. I am enough. I have enough.","2. I am in the right place, at the right time, doing the right thing.",
-"3. I can do hard things.","4. I allow myself to be more fully me.","5. I believe in myself.","6. I am grateful for another day of life.",
-"7. I am worthy of what I desire.","8. I am resilient in the face of challenges.","9. I am proud of myself and my achievements.",
-"10.I will accomplish everything I need to do today.","11.I do my best, and my best is good enough.","12.I prioritize my well-being.",
-"13.I overcome my fears by getting out of my comfort zone.","14.I am love, and I am loved.","15.I trust my inner guidance and follow it.",
-"16.I accept my emotions and let them move through me.","17.I take care of myself, mind, body, and spirit.","18.I trust myself to make the right decisions.",
-"19.I use my voice to speak up for myself and others.","20.I trust that I'm heading in the right direction.","21.I allow myself to make mistakes as they help me grow.",
-"22.I accept myself exactly as I am without judgment.","23.I have everything I need to achieve my goals.","24.I am safe and supported.",
-"25.I love and accept myself.","26.I am kind to myself and others."];
-
-let getQuote = () => {
-  author.innerText = newArr[i].substring(0,3);
-  quote.innerText = newArr[i].substring(3);
-  i += 1;
-  if (i>25){
-    i = 0;
-  }
-};
-window.addEventListener("load", getQuote);
-btn.addEventListener("click", getQuote);
-function goBack(){
-  window.history.back()
-}
-    </script>
+    <nav>
+        <input id="nav-toggle" type="checkbox">
+        <div class="logo"><img src="ALLz_Well.png" alt="" width="20%"></div>
+        <ul class="links">
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="breathingexericise.html">Breathing</a></li>
+          <li><a href="motivation.html">Motivation</a></li>
+          <li><a href="music (1).html">Music</a></li>
+          <li><a href="contactus.html">Contact</a></li>
+          <li><a href="affirmations.html">Affirmations</a></li>
+        </ul>
+        <label for="nav-toggle" class="icon-burger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+      </nav>
+    <h1 class="subtitle">1. I am enough. I have enough.</h1>
+    <h1 class="subtitle">2. I am in the right place, at the right time, doing the right thing.</h1>
+    <h1 class="subtitle">3. I can do hard things.</h1>
+    <h1 class="subtitle">4. I allow myself to be more fully me.</h1>
+    <h1 class="subtitle">5. I believe in myself.</h1>
+    <h1 class="subtitle">6. I am grateful for another day of life.</h1>
+    <h1 class="subtitle">7. I am worthy of what I desire.</h1>
+    <h1 class="subtitle">8. I am resilient in the face of challenges.</h1>
+    <h1 class="subtitle">9. I am proud of myself and my achievements.</h1>
+    <h1 class="subtitle">10.I will accomplish everything I need to do today.</h1>
+    <h1 class="subtitle">11.I do my best, and my best is good enough.</h1>
+    <h1 class="subtitle">12.I prioritize my well-being.</h1>
+    <h1 class="subtitle">13.I overcome my fears by getting out of my comfort zone.</h1>
+    <h1 class="subtitle">14.I am love, and I am loved.</h1>
+    <h1 class="subtitle">14.I trust my inner guidance and follow it.</h1>
+    <h1 class="subtitle">15.I accept my emotions and let them move through me.</h1>
+    <h1 class="subtitle">16.I take care of myself, mind, body, and spirit.</h1>
+    <h1 class="subtitle">17.I trust myself to make the right decisions.</h1>
+    <h1 class="subtitle">18.I use my voice to speak up for myself and others.</h1>
+    <h1 class="subtitle">19.I trust that I’m heading in the right direction.</h1>
+    <h1 class="subtitle">20.I allow myself to make mistakes as they help me grow.</h1>
+    <h1 class="subtitle">21.I accept myself exactly as I am without judgment.</h1>
+    <h1 class="subtitle">22.I have everything I need to achieve my goals.</h1>
+    <h1 class="subtitle">23.I am safe and supported.</h1>
+    <h1 class="subtitle">24.I love and accept myself.</h1>
+    <h1 class="subtitle">25.I am kind to myself and others.</h1>
 </body>
 </html>
