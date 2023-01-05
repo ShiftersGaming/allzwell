@@ -129,7 +129,7 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
-	background-color: #F4C89C;
+	background-color: transparent;
   color: black;
 }
 nav .logo {
@@ -221,7 +221,6 @@ nav .icon-burger .line {
 		opacity: 0;
 	}
 	
-}
 
 .youtube-link {
 	position: fixed;
@@ -386,5 +385,4 @@ p {
   font-size: 2.5rem;
   text-align:center;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center;}
