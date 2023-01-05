@@ -94,6 +94,14 @@ body {
     height: 100vh;
     font-size: 1rem;
 }
+#eating{color: white;
+    background-color: pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 #Cyber-Bullying{
     color: white;
     background-color: rgb(235, 198, 12);
