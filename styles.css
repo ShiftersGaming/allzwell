@@ -25,8 +25,9 @@ body {
 .subtitle {
   font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
-  text-align: center;
+  text-align: justify;
   color: black;
+  width: 70vw;
 }
 .btn {
   border: transparent;
@@ -128,7 +129,7 @@ nav {
 	font-family: 'Montserrat', sans-serif;
 	padding: 0 5%;
 	height: 100px;
-	background-color: transparent;
+	background-color: #F4C89C;
   color: black;
 }
 nav .logo {
@@ -194,7 +195,7 @@ nav .icon-burger .line {
 		height: auto;
 		flex-direction: column;
 		justify-content: space-evenly;
-		background-color: green;
+		background-color: #e86830;;
 		overflow: hidden;
 		box-sizing: border-box;
 		transition: all .5s ease-in-out;
