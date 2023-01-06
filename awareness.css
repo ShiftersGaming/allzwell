@@ -84,6 +84,15 @@ body {
     align-items: center;
     height: 100vh;
 }
+#SLD{
+    color: white;
+    background-color: greenyellow;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
 #Bullying{
     color: white;
     background-color: cyan;
